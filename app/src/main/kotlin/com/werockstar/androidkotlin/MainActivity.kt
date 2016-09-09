@@ -3,6 +3,7 @@ package com.werockstar.androidkotlin
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tvHello.text = "Hello kotlin"
+        btnOK.setOnClickListener {
+            toast(edtMessage.text)
+        }
     }
 }

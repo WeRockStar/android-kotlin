@@ -5,9 +5,17 @@
     android:layout_height="match_parent"
     tools:context="com.werockstar.androidkotlin.MainActivity">
 
-    <TextView
-        android:id="@+id/tvHello"
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="message" />
+
+    <Button
+        android:id="@+id/btnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@id/edtMessage"
+        android:layout_centerHorizontal="true"
+        android:text="Ok" />
 </RelativeLayout>
